@@ -1,0 +1,25 @@
+<mvc:View controllerName="sap.ui.demo.walkthrough.controller.DeltaAdmin"
+   xmlns="sap.m"
+    xmlns:f="sap.f"
+    xmlns:l="sap.ui.layout"
+    xmlns:layout="sap.ui.layout"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns:html="http://www.w3.org/1999/xhtml"
+    xmlns:custom="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1">
+    <App>
+        <Page 
+            title="Delta Food Admin"
+			backgroundDesign= "Solid"
+			titleAlignment="Center">
+            <GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Manage Activity Master Data Type"
+                subheader="Subtitle" press="press">
+                <TileContent>
+                <RadioButtonGroup columns="1" width="500px" class="sapUiMediumMarginBottom" select=".onPressModeBtn">
+					<RadioButton id="RB1-2" text="Decline" />
+					<RadioButton id="RB1-3" text="Approved" />
+				</RadioButtonGroup>
+                </TileContent>
+            </GenericTile>
+        </Page>
+    </App>
+</mvc:View>

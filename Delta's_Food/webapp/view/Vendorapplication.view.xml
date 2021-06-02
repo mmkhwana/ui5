@@ -1,0 +1,40 @@
+<mvc:View controllerName="sap.ui.demo.walkthrough.controller.Vendorapplication"
+   xmlns="sap.m"
+    xmlns:f="sap.f"
+    xmlns:l="sap.ui.layout"
+    xmlns:layout="sap.ui.layout"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns:html="http://www.w3.org/1999/xhtml"
+    xmlns:custom="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1">
+    <App>
+        <pages>
+            <Page
+				id="vendorApply"
+				title="Application Form"
+				backgroundDesign= "Solid"
+				showNavButton="true"
+				navButtonPress=".onPressDetailBack">
+                <Label text="Company Name" />
+                <Input 	id="CompanyName"
+						placeholder="Enter Company Name" 
+					/>
+                <Label text="Company Email" />
+                <Input id="CompanyEmail" 
+					   type="Email" 
+					   placeholder="Enter Company Email"
+				/>
+                <Label text="Product Type" />
+                <Input id="ProductType" placeholder="Enter Product Type"/>
+                <Label text="Comapny Registration Number" />
+                <Input id="CompanyNumber" placeholder="Enter Comapny Registration Number"/>
+                <Label text="Telephone Number" />
+                <Input id="TelNumber" type="Tel" placeholder="Enter Telephone Number"/>
+                <Label text="Password" />
+                <Input id="NewPwd" type="Password" placeholder="Enter Password"/>
+                <Label text="Confirm Password" />
+                <Input id="ConPwd" type="Password" placeholder="Enter Confirm Password"/>
+                <Button text="Submit" press=".onPressSubmit"/>
+			</Page>
+        </pages>
+    </App>
+</mvc:View>

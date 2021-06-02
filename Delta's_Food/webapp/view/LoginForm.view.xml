@@ -1,0 +1,42 @@
+<mvc:View controllerName="sap.ui.demo.walkthrough.controller.LoginForm"
+    xmlns="sap.m"
+    xmlns:f="sap.f"
+    xmlns:l="sap.ui.layout"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns:html="http://www.w3.org/1999/xhtml"
+    xmlns:custom="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1">
+    <App>
+        <Page
+                
+				title="Delta's Food"
+				backgroundDesign= "Solid"
+                titleAlignment="Center">
+                <content>
+					<FlexBox alignItems="Center" justifyContent="Center">
+					<l:VerticalLayout>
+                    <Text text="Already registered LogIn" />
+						<l:HorizontalLayout>
+							<Label id="idLCname" width="120px" text="Company Email"></Label>
+							<Input id="idICname"></Input>
+						</l:HorizontalLayout>
+						<l:HorizontalLayout>
+							<Label id="idLPwd" width="120px" text="Password"></Label>
+							<Input id="idIPwd" type="Password"></Input>
+						</l:HorizontalLayout>
+						<l:HorizontalLayout>
+							<Label width="95px"></Label>
+							<Button id="idBtn" text="Login" press="onPressLogin" width="120px"></Button>
+						</l:HorizontalLayout>
+                        <Text text="Don't have an account click apply to register" />
+                        <l:HorizontalLayout>
+                            <Label width="95px"></Label>
+                            <Button text="Apply " press=".onPressApply" width="120px"/>
+                        </l:HorizontalLayout>
+					</l:VerticalLayout>
+				
+                </FlexBox>
+                </content>
+			</Page>
+			
+    </App>
+</mvc:View>

@@ -1,0 +1,23 @@
+<mvc:View controllerName="sap.ui.demo.walkthrough.controller.SplitApp"
+    xmlns="sap.m"
+    xmlns:f="sap.f"
+    xmlns:l="sap.ui.layout"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns:html="http://www.w3.org/1999/xhtml"
+    xmlns:custom="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1">
+	<App>
+		
+			<SplitApp
+				title="Delta Food Vendor Application"
+				backgroundDesign= "Solid"
+				titleAlignment="Center">
+						<masterPages>
+							<mvc:XMLView id="idMaster" viewName="sap.ui.demo.walkthrough.view.Master"></mvc:XMLView>
+						</masterPages>
+						<detailPages>
+							<mvc:XMLView id="idVendorApp" viewName="sap.ui.demo.walkthrough.view.Vendorapplication"></mvc:XMLView>
+							<mvc:XMLView id="idVendorStatus" viewName="sap.ui.demo.walkthrough.view.VendorStatus"></mvc:XMLView>
+						</detailPages>
+			</SplitApp>
+	</App>
+</mvc:View>

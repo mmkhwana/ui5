@@ -1,0 +1,25 @@
+<mvc:View controllerName="sap.ui.demo.walkthrough.controller.Master"
+    xmlns="sap.m"
+    xmlns:f="sap.f"
+    xmlns:l="sap.ui.layout"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns:html="http://www.w3.org/1999/xhtml"
+    xmlns:custom="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1">
+    <App>
+        <pages>
+            <Page
+                id="idMaster"
+                title="Application Menu"
+                backgroundDesign="List"
+                showNavButton="true"
+                navButtonPress=".onPressMasterBack">
+                <List>
+					<items>
+						<StandardListItem title="Application Process" type="Active" press="gotoVendorApply" />
+						<StandardListItem title="Application Status" type="Active" press="gotoVendorStatus" />
+					</items>
+				</List>
+            </Page>
+		</pages>
+    </App>
+</mvc:View>
